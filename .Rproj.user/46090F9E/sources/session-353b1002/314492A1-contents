@@ -124,7 +124,7 @@ asdf <- subs_2 %>%
 ```
 
 
-Column {data-width=666 .tabset}
+Column {data-width=500 .tabset}
 -----------------------------------------------------------------------
 
 ### Net Subscribers
@@ -181,7 +181,7 @@ Column {data-width=334}
 ### Weekly KPIs
 
 
-```{r, fig.asp = .6}
+```{r}
 test_tab <- asdf %>% 
   filter(year == 2024 & month(wk_end) == 1) %>% 
   select(wk_no, wk_start, wk_end, net_subs, subs, churns, cancels) %>% 
@@ -246,4 +246,50 @@ plotly::ggplotly(pending_plot) %>%
   plotly::config(displayModeBar = F)
 
 ```
+
+
+Column {data-width=166}
+-----------------------------------------------------------------------
+
+
+### Active Subs
+
+```{r}
+actives <- df %>% 
+  filter(status != 'canceled')
+
+n_actives <- nrow(actives)
+
+valueBox(value = scales::comma(n_actives), icon = 'fa-address-card',
+         caption = 'Active Subscribers', color = 'green')
+```
+
+### Visits
+
+```{r}
+net_subs <- subs_2 %>% 
+  filter(year(date) == 2024 & month(date) == 1) %>% 
+  mutate(net_subs = subscriptions - churns)
+
+net_num <- sum(net_subs$net_subs)
+
+valueBox(value = scales::comma(net_num), icon = 'fa-user',
+         caption = 'Net Subscribers for January', color = 'orange')
+```
+
+### Monthly % of User Base
+
+```{r}
+m_pct <- actives %>% 
+  count(plan) %>% 
+  filter(plan == 'month') %>% 
+  pull(n)
+
+m_percent <- m_pct/n_actives
+
+valueBox(value = scales::percent(m_percent, accuracy = .01), icon = 'fa-eye',
+         caption = 'Monthly % of User Base', color = 'coral')
+```
+
+
 

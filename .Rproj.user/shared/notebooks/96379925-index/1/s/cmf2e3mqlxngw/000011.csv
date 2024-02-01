@@ -1,0 +1,7 @@
+"0","actives <- df %>% "
+"0","  filter(status != 'canceled')"
+"0",""
+"0","n_actives <- nrow(actives)"
+"0",""
+"0","valueBox(value = scales::comma(n_actives), icon = 'fa-address-card',"
+"0","         caption = 'Active Subscribers', color = 'green')"

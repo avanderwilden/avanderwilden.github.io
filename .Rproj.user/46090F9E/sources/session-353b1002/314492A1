@@ -3,7 +3,7 @@
     "path": "C:/Users/avanderwilden/OneDrive - nesn.com/Desktop/R_work/avanderwilden.github.io/index.Rmd",
     "project_path": "index.Rmd",
     "type": "r_markdown",
-    "hash": "3342168575",
+    "hash": "3356457986",
     "contents": "",
     "dirty": false,
     "created": 1706807016966.0,
@@ -12,16 +12,16 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "239,49",
-        "scrollLine": "235",
+        "cursorPosition": "293,0",
+        "scrollLine": "291",
         "last_setup_crc32": "353b100256e9d3b"
     },
     "folds": "",
-    "lastKnownWriteTime": 1706807361,
+    "lastKnownWriteTime": 1706810271,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1706807361780,
+    "last_content_update": 1706810271294,
     "read_only": false,
     "read_only_alternatives": []
 }
