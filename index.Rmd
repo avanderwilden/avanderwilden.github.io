@@ -149,7 +149,8 @@ net_subs_plot <- subs_2 %>%
         plot.title.position = 'plot',
         plot.title = element_text(face = 'bold', size = 11))
 
-plotly::ggplotly(net_subs_plot, tooltip = c('x','y', 'text'))
+plotly::ggplotly(net_subs_plot, tooltip = c('x','y', 'text')) %>% 
+  plotly::config(displayModeBar = F)
 ```
 
 ### Active Subscribers
@@ -170,7 +171,8 @@ active_subs_plot <- subs_2 %>%
         plot.title.position = 'plot',
         plot.title = element_text(face = 'bold', size = 11))
 
-plotly::ggplotly(active_subs_plot)
+plotly::ggplotly(active_subs_plot) %>% 
+  plotly::config(displayModeBar = F)
 ```
 
 Column {data-width=334}
@@ -240,7 +242,8 @@ pending_plot <- pending %>%
        y = 'Expiring Subscriptions',
        title = glue::glue("{tot_pend} Pending Cancelations as of {tm1}"))
 
-plotly::ggplotly(pending_plot)
+plotly::ggplotly(pending_plot) %>% 
+  plotly::config(displayModeBar = F)
 
 ```
 
