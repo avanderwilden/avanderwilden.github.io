@@ -4,7 +4,7 @@ output:
   flexdashboard::flex_dashboard:
     theme:
       bg: "#E3E9EF"
-      fg: "#D5fa2c" 
+      fg: "#3f4557" 
       primary: "#053ef7"
       base_font:
         google: Prompt
