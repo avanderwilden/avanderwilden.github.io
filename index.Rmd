@@ -22,7 +22,7 @@ library(flexdashboard)
 
 
 
-[January 2024](nesn360-jan24.Rmd)
+[January 2024](nesn360-jan24.html)
 
 
 
