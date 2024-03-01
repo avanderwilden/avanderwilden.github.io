@@ -1,0 +1,24 @@
+"0","google <- read_csv('google_ads.csv')"
+"2","[1mRows: [22m[34m20891[39m [1mColumns: [22m[34m3[39m"
+"2","[36m--[39m [1mColumn specification[22m [36m-------------------------------------------------------------[39m
+[1mDelimiter:[22m "",""
+[31mchr[39m (3): user_email, stripe_customer_id, stripe_subscription_id"
+"2","
+[36mi[39m Use `spec()` to retrieve the full column specification for this data.
+[36mi[39m Specify the column types or set `show_col_types = FALSE` to quiet this message."
+"0","meta <- read_csv('meta_ads.csv')"
+"2","[1mRows: [22m[34m2985[39m [1mColumns: [22m[34m3[39m"
+"2","[36m--[39m [1mColumn specification[22m [36m-------------------------------------------------------------[39m
+[1mDelimiter:[22m "",""
+[31mchr[39m (3): user_email, stripe_customer_id, stripe_subscription_id"
+"2","
+[36mi[39m Use `spec()` to retrieve the full column specification for this data.
+[36mi[39m Specify the column types or set `show_col_types = FALSE` to quiet this message."
+"0","bing <- read_csv('bing_ads.csv')"
+"2","[1mRows: [22m[34m3221[39m [1mColumns: [22m[34m3[39m"
+"2","[36m--[39m [1mColumn specification[22m [36m-------------------------------------------------------------[39m
+[1mDelimiter:[22m "",""
+[31mchr[39m (3): user_email, stripe_customer_id, stripe_subscription_id"
+"2","
+[36mi[39m Use `spec()` to retrieve the full column specification for this data.
+[36mi[39m Specify the column types or set `show_col_types = FALSE` to quiet this message."

@@ -1,0 +1,1 @@
+"0","fit4 <- survfit(Surv(c_time,c_status) ~ month_start, data = goog_ret)"

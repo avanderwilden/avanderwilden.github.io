@@ -1,0 +1,7 @@
+"0","df_2 <- df %>% "
+"0","  left_join(google %>% select(-c(stripe_customer_id, user_email)),"
+"0","            by = c('sub_id' = 'stripe_subscription_id')) %>% "
+"0","  left_join(meta %>% select(-c(stripe_customer_id, user_email)),"
+"0","            by = c('sub_id' = 'stripe_subscription_id')) %>% "
+"0","  left_join(bing %>% select(-c(stripe_customer_id, user_email)),"
+"0","            by = c('sub_id' = 'stripe_subscription_id'))"

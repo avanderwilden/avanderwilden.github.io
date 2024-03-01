@@ -1,0 +1,1 @@
+"0","fit2 <- survfit(Surv(c_time,c_status) ~ source, data = df_2)"

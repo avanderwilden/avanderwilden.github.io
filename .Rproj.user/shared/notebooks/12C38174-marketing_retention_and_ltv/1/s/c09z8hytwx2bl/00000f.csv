@@ -1,0 +1,5 @@
+"0","p1 <- surv_plt$plot"
+"0","p2 <- surv_plt2$plot"
+"0",""
+"0","plotp = cowplot::plot_grid(p1,p2,align = ""h"",nrow = 1,rel_heights = c(1,1))"
+"0","ggsave(filename = paste0(""retention_by_source_2024_q4_only"","".png""), plot = plotp, device = ""png"", height = 7, width = 14)"

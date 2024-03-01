@@ -1,0 +1,8 @@
+"0","google <- google %>% "
+"0","  mutate(google = 'google')"
+"0",""
+"0","meta <- meta %>% "
+"0","  mutate(meta = 'meta')"
+"0",""
+"0","bing <- bing %>% "
+"0","  mutate(bing = 'bing')"

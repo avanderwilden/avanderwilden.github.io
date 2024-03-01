@@ -1,0 +1,4 @@
+"0","fin_df <- df_2 %>% "
+"0","  left_join(spend) %>% "
+"0","  filter(!is.na(payment_count))"
+"2","Joining with `by = join_by(customer_id)`"
