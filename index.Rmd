@@ -24,7 +24,7 @@ library(flexdashboard)
 
 [January 2024](nesn360-jan24.html)
 
-[February 2024](nesn60-feb24.html)
+[February 2024](nesn360-feb24.html)
 
 
 
