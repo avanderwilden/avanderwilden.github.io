@@ -1,0 +1,37 @@
+---
+title: "NESN 360 Monthly Subscriber Reports"
+output: 
+  flexdashboard::flex_dashboard:
+    theme:
+      bg: "#E3E9EF"
+      fg: "#3f4557" 
+      primary: "#053ef7"
+      base_font:
+        google: Prompt
+      code_font:
+        google: JetBrains Mono
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+# Install thematic and un-comment for themed static plots (i.e., ggplot2)
+# thematic::thematic_rmd()
+```
+
+
+
+[January 2024](nesn360-jan24.html)
+
+[February 2024](nesn360-feb24.html)
+
+[March 2024](nesn360-mar24.html)
+
+
+
+
+
+
+
+
