@@ -1,0 +1,67 @@
+---
+title: "Untitled"
+output: html_document
+date: "2024-07-01"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(lubridate)
+```
+
+
+
+
+
+```{r}
+q <- read_csv('da_weekly_71.csv') %>% 
+  mutate(sub_start_date = mdy(sub_start_date),
+         churn_date = mdy(churn_date))
+```
+
+```{r}
+q %>%
+  filter(plan == 'year') %>% 
+  group_by(year(sub_start_date), month(sub_start_date)) %>% 
+  summarise(subs = n()) %>% 
+  ungroup() %>% 
+  ungroup()
+```
+
+
+
+```{r}
+q %>%
+  filter(plan == 'year') %>% 
+  filter(status == 'canceled') %>% 
+  group_by(year(churn_date), month(churn_date)) %>% 
+  summarise(subs = n()) %>% 
+  ungroup() %>% 
+  ungroup()
+```
+
+
+
+```{r}
+q %>% 
+  filter(status != 'canceled') %>% 
+  filter(plan == 'year') %>% 
+  nrow()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+

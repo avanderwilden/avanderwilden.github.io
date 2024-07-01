@@ -1,0 +1,8 @@
+"0","net_subs <- subs_2 %>% "
+"0","  filter(year(date) == 2024 & month(date) == 6) %>% ### "
+"0","  mutate(net_subs = subscriptions - churns)"
+"0",""
+"0","net_num <- sum(net_subs$net_subs)"
+"0",""
+"0","valueBox(value = scales::comma(net_num), icon = 'fa-user',"
+"0","         caption = 'Net Subscribers for Month', color = 'orange')"
